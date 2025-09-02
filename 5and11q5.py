@@ -1,9 +1,10 @@
 #Take an integer A as input. You have to tell whether A is divisible by both 5 and 11 or not. 
 
-A = int(input("Enter an integer: "))
-
-if (A % 5 == 0 and A % 11 == 0):
-    print("YES, it is both divisible by 5 and 11.")
+A = int(input("Enter a no. : "))
+# check divisibilty by 5 and 11
+if(A % 5 == 0 and A % 11 == 0):
+    print("Number",A,"is Divisible by Both 5 and 11")
+elif(A % 5 == 0 or A % 11 == 0):
+    print("Number",A,"is EITHER Divisible by 5 OR 11")
 else:
-    print("NO, it is not divisible by 5 and 11.")
-
+    print("Number",A,"is NEITHER Divisible by 5 NOR 11")

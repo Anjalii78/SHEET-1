@@ -1,8 +1,8 @@
-A = int(input("Enter first angle: "))
-B = int(input("Enter second angle: "))
-C = int(input("Enter third angle: "))
-
-if A + B + C == 180 and A > 0 and B > 0 and C > 0:
-    print("Valid triangle")
+angle1 = int(input("Enter angle1 : "))
+angle2 = int(input("Enter angle2 : "))
+angle3 = int(input("Enter angle3 : "))
+SumOfAngles = angle1 + angle2  + angle3
+if(SumOfAngles == 180):
+    print("Triangle is Valid")
 else:
-    print("Invalid triangle")
+    print("Triangle is Invalid")

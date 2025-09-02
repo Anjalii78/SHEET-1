@@ -1,6 +1,10 @@
-year = int(input("enter the year: "))
-if(year % 400 == 0):
-    print("given year is leap year")
+
+year = int(input("Enter a Year: "))
+if (year % 400 == 0):
+    print(year, "is a Century Leap Year")
+elif (year % 100 == 0):
+    print(year, "is a Century Year but NOT a Leap Year")
+elif (year % 4 == 0):
+    print(year, "is a Non-Century Leap Year")
 else:
-    print("given year is not leap year")
-#  WAP to check whether a leap year or not
+    print(year, "is NOT a Leap Year")

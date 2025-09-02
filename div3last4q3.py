@@ -1,6 +1,8 @@
-n = int(input("Enter a number: "))
-last_digit = n - (10 * int(n / 10))
-if n % 3 == 0 and last_digit == 4:
-    print("Yes")
+num = int(input("Enter a no. : "))
+# check divisibilty by 3 & lastDigit 4 
+if(num % 3 == 0 and num % 10 == 4):
+    print(num,"is Divisible by 3 and last digit is 4 ")
+elif(num % 3 == 0 or num % 10 == 4):
+    print(num,"is EITHER Divisible by 3 OR last digit is 4 ")
 else:
-    print("No")
+    print(num,"is NEITHER Divisible by 3 NOR last digit is 4 ")
